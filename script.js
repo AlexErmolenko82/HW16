@@ -16,6 +16,7 @@ const form = document.forms.addItem;
 const input = form.input;
 const select = form.select;
 const button = form.querySelector("button");
+const errorMessage = document.querySelector(".error_message");
 
 const addItem = () => {
     let list = document.querySelector(`.list`);
@@ -41,7 +42,21 @@ const addItem = () => {
 
 form.onsubmit = (event) => {
   event.preventDefault();
+
+  if (input.value.trim().length === 0) {
+    input.classList.add("error");
+    errorMessage.innerHTML = "Nickname field is required";
+    return;
+  }
   addItem();
+}
+
+input.onfocus = () => {
+  const isErrorField = input.classList.contains("error");
+if (isErrorField) {
+      input.classList.remove("error");
+      errorMessage.innerHTML = "";
+    }
 }
 
 container.addEventListener("click", (event) => {
