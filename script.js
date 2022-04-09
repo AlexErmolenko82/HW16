@@ -47,8 +47,8 @@ form.onsubmit = (event) => {
     input.classList.add("error");
     errorMessage.innerHTML = "Nickname field is required";
     return;
-  }
-  addItem();
+  } else
+    addItem();
 }
 
 input.onfocus = () => {
