@@ -9,7 +9,7 @@
 // 	<button type="submit">Add</button>
 // </form>
 // <ul id="list"></ul>
-// Добавлять атрибуты, классы и тд можно по своему усмотрению.ф
+// Добавлять атрибуты, классы и тд можно по своему усмотрению
 
 const container = document.querySelector(".container");
 const form = document.forms.addItem;
