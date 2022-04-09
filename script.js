@@ -78,7 +78,7 @@ container.addEventListener("click", (event) => {
 
 const showCountItems = () => {
   let count = document.querySelectorAll(".list_item").length;
-  document.querySelector(".title").innerHTML = `ToDo list (${count} items);`;
+  document.querySelector(".title").innerHTML = `ToDo list (${count} items):`;
 }
 
 showCountItems();
