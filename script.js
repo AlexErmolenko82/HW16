@@ -45,10 +45,10 @@ form.onsubmit = (event) => {
 
   if (input.value.trim().length === 0) {
     input.classList.add("error");
-    errorMessage.innerHTML = "Nickname field is required";
+    errorMessage.innerHTML = "ToDo field is required";
     return;
-  } else
-    addItem();
+  }
+  addItem();
 }
 
 input.onfocus = () => {
