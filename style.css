@@ -17,3 +17,7 @@ button {
 form {
     height: 40px;
 }
+
+.markButton {
+    width: 65px;
+}
